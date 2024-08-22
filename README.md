@@ -228,6 +228,32 @@ node_modules/
 dist/
 ```
 
+### Update (22/08/2024)
+
+Do ESL**int** phiên bản mới chuyển sang dùng **ESLint's flat config** nên ta phải chuyển format từ `.eslintrc.json` sang **`eslint.config.js`**
+
+Xem thêm tại [đây](https://www.npmjs.com/package/@eslint/migrate-config)
+
+Đầu tiên tải bộ kit giúp chuyển đổi:
+
+```bash
+npm i -D @eslint/migrate-config
+```
+
+Sau đó chạy câu lệnh:
+
+```bash
+npx @eslint/migrate-config .eslintrc
+```
+
+Để tiến hành chuyển đổi từ `.eslintrc` sang `*eslint.config.js*`
+
+Sau đó cài thêm 2 bộ để hỗ trợ được yêu cầu:
+
+```bash
+npm install @eslint/js @eslint/eslintrc -D
+```
+
 ## **Config editor để chuẩn hóa cấu hình editor**
 
 Cài Extensions **EditorConfig for VS Code**
